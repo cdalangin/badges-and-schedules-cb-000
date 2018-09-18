@@ -11,6 +11,7 @@ def assign_rooms(name)
   group = []
   group.each_with_index do |name, index|
   group[name] = index
-  "Hello, #{name}! You'll be assigned to room #{index}!"
+  group.push("Hello, #{name}! You'll be assigned to room #{index}!")
 end
+  group
 end
