@@ -4,13 +4,15 @@ def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(attendees)
-  badges = [Edsger, Ada, Charles, Alan, Grace, Linus, Matz]
+def batch_badge_creator(array)
+  badges = []
+  array.each do |name|
+  puts "Hello, my name is #{name}"
 end
 
-def assign_rooms(attendees)
+def assign_rooms(array)
     group = []
-    group.each_with_index do |attendees, index|
+    array.each_with_index do |attendees, index|
     group << "Hello, #{attendees}! You'll be assigned to room #{index}!"
   end
   group
