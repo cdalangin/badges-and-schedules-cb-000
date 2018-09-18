@@ -26,4 +26,5 @@ def printer(array)
   array.each do |badge|
     puts badge
   end
+  assigned
 end
