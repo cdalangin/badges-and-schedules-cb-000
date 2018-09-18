@@ -24,6 +24,6 @@ end
 def printer
   assigned = [batch_badge_creator, assigned]
   assigned.each do |badge|
-    badge.call
+    puts badge
   end
 end
