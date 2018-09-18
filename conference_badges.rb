@@ -9,7 +9,7 @@ end
 
 def assign_rooms(name)
   group = []
-  group.each_with_index do |name, index|
+  group.each.with_index do |name, index|
   index = group[name]
   group.push("Hello, #{name}! You'll be assigned to room #{index}!")
 end
