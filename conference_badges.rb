@@ -24,9 +24,6 @@ end
 def printer(array)
   assigned = [method(:batch_badge_creator), method(:assigned)]
   assigned.each do |badge|
-    puts "#{badge}"
-  end
-  assign_rooms.each do |rooms|
-    puts "#{rooms}"
+    badge.call
   end
 end
