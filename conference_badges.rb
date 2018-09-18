@@ -23,7 +23,7 @@ end
 
 def printer(array)
   assigned = [batch_badge_creator, assigned]
-  assigned.each do |badge|
+  array.each do |badge|
     puts badge
   end
 end
