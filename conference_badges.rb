@@ -7,9 +7,9 @@ end
 def batch_badge_creator
 end
 
-def assign_rooms(name)
+def assign_rooms(value)
     group = []
-    group.each_with_index do |name, index|
+    group.each_with_index do |value, index|
     group << "Hello, #{name}! You'll be assigned to room #{index}!"
   end
   group
