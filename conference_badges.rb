@@ -12,5 +12,4 @@ def assign_rooms(name)
   group.each_with_index do |name, index|
   group.push("Hello, #{name}! You'll be assigned to room #{index}!")
 end
-  group
 end
