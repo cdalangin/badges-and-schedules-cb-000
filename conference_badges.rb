@@ -15,6 +15,7 @@ end
 def assign_rooms(array)
     group = []
     array.each_with_index do |attendees, index|
+      index = index.to_i + 1
     group << "Hello, #{attendees}! You'll be assigned to room #{index}!"
   end
   group
