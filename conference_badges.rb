@@ -22,7 +22,7 @@ def assign_rooms(array)
 end
 
 def printer(array)
-  assigned = [method(:batch_badge_creator), method(:assigned)]
+  assigned = [batch_badge_creator, assigned]
   assigned.each do |badge|
     badge.call
   end
