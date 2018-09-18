@@ -22,7 +22,8 @@ def assign_rooms(array)
 end
 
 def printer(array)
-  batch_badge_creator.each do |badge|
+  assigned = [method(:batch_badge_creator), method(:assigned)]
+  assigned.each do |badge|
     puts "#{badge}"
   end
   assign_rooms.each do |rooms|
